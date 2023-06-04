@@ -17,7 +17,7 @@
         <ul>
           <li>
             <a href="#">
-             
+              
               <span class="title">ADMIN</span>
             </a>
           </li>
@@ -77,13 +77,14 @@
         <!-- ======================= Cards ================== -->
         <div class="cardBox">
           <div class="card">
-            <div>
-              <div class="numbers">1,504</div>
-              <div class="cardName">Total Application</div>
-            </div>
-
+            <a href>
+              <div>
+                <div class="numbers">436</div>
+                <div class="cardName">Total Applications</div>
+              </div>
+            </a>
             <div class="iconBx">
-              <ion-icon name="eye-outline"></ion-icon>
+              <ion-icon name="newspaper-outline"></ion-icon>
             </div>
           </div>
 
@@ -93,7 +94,7 @@
               <div class="cardName">Accepted</div>
             </div>
             <div class="iconBx">
-              <ion-icon name="cart-outline"></ion-icon>
+              <ion-icon name="checkmark-outline"></ion-icon>
             </div>
           </div>
 
@@ -104,7 +105,7 @@
             </div>
 
             <div class="iconBx">
-              <ion-icon name="chatbubbles-outline"></ion-icon>
+              <ion-icon name="close-outline"></ion-icon>
             </div>
           </div>
 
@@ -115,7 +116,7 @@
             </div>
 
             <div class="iconBx">
-              <ion-icon name="cash-outline"></ion-icon>
+              <ion-icon name="cart-outline"></ion-icon>
             </div>
           </div>
         </div>
@@ -125,7 +126,7 @@
         <div class="details">
           <div class="recentOrders">
             <div class="cardHeader">
-              <h2>Application Request</h2>
+              <h2>Application Requests</h2>
               <div class="search">
                 <label>
                   <input type="text" placeholder="Search here">
@@ -150,60 +151,42 @@
 
               <tbody>
                 <tr>
-                  <td>01</td>
-                  <td>Ratan TATA</td>
-                  <td>$1200</td>
+                  <td><a href="{% url 'Applicant_details' %}">01</a></td>
+                  <td><a href="{% url 'Applicant_details' %}">Subhalaxmi Bal</a></td>
+                  <td>1000/-</td>
                   <td>Paid</td>
                   <td>01.01.2023</td>
                   <td>
                     <button class="accept">Accept</button>
                     <button class="reject">Reject</button>
                   </td>
-                  <td>
-                    <a href="">
-                    <span class="icon">
-                    <ion-icon name="information-circle-outline"></ion-icon>
-                    </span>
-                    </a>
-                  </td>
+                  <td>Rejected</td>
                 </tr>
 
                 <tr>
-                  <td>02</td>
-                  <td>Mukesh Ambani</td>
-                  <td>$110</td>
+                  <td><a href="{% url 'Applicant_details' %}">02</a></td>
+                  <td><a href="{% url 'Applicant_details' %}">Sikhanjali Bal</a></td>
+                  <td>1200/-</td>
                   <td>Due</td>
                   <td>01.01.2023</td>
                   <td>
                     <button class="accept">Accept</button>
                     <button class="reject">Reject</button>
                   </td>
-                  <td>
-                    <a href="">
-                    <span class="icon">
-                    <ion-icon name="information-circle-outline"></ion-icon>
-                    </span>
-                    </a>
-                  </td>
+                  <td>Accepted</td>
                 </tr>
 
                 <tr>
-                  <td>03</td>
-                  <td>Jeff Bezos</td>
-                  <td>$1200</td>
+                  <td><a href="{% url 'Applicant_details' %}">03</a></td>
+                  <td><a href="{% url 'Applicant_details' %}">Pradip Kumar Sutar</a></td>
+                  <td>1500/-</td>
                   <td>Paid</td>
                   <td>01.01.2023</td>
                   <td>
                     <button class="accept">Accept</button>
                     <button class="reject">Reject</button>
                   </td>
-                  <td>
-                    <a href="">
-                    <span class="icon">
-                    <ion-icon name="information-circle-outline"></ion-icon>
-                    </span>
-                    </a>
-                  </td>
+                  <td>Accepted</td>
                 </tr>
 
               </tbody>

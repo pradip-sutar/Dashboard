@@ -9,3 +9,4 @@ def analytics(request):
 
 def notification(request):
     return render(request,'notification.html')
+

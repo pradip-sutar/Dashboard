@@ -10,7 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
 
-    <title>Admin Dashboard</title>
+    <title>Analytics</title>
 
   </head>
 
@@ -83,17 +83,7 @@
 
         <!-- ==================== Status ====================== -->
         <div class="cardBox">
-          <div class="card">
-            <a href>
-              <div>
-                <div class="numbers">436</div>
-                <div class="cardName">Total Applications</div>
-              </div>
-            </a>
-            <div class="iconBx">
-              <ion-icon name="newspaper-outline"></ion-icon>
-            </div>
-          </div>
+          
 
           <div class="card">
             <a href>
@@ -136,57 +126,58 @@
           <div class="card">
             <a href>
               <div>
-                <div class="numbers">72</div>
-                <div class="cardName">Elec.</div>
+                <div class="numbers">34</div>
+                <div class="cardName">MBA</div>
               </div>
             </a>
 
             <div class="iconBx">
-              <ion-icon name="bulb-outline"></ion-icon>
+              <ion-icon name="analytics-outline"></ion-icon>
             </div>
           </div>
 
           <div class="card">
             <a href>
               <div>
-                <div class="numbers">72</div>
-                <div class="cardName">Elec.</div>
+                <div class="numbers">47</div>
+                <div class="cardName">MBBS</div>
               </div>
             </a>
 
             <div class="iconBx">
-              <ion-icon name="bulb-outline"></ion-icon>
+              <ion-icon name="pulse-outline"></ion-icon>
+
             </div>
           </div>
 
           <div class="card">
             <a href>
               <div>
-                <div class="numbers">72</div>
-                <div class="cardName">Elec.</div>
+                <div class="numbers">85</div>
+                <div class="cardName">MSc.</div>
               </div>
             </a>
 
             <div class="iconBx">
-              <ion-icon name="bulb-outline"></ion-icon>
+              <ion-icon name="bandage-outline"></ion-icon>
             </div>
           </div>
 
           <div class="card">
             <a href>
               <div>
-                <div class="numbers">72</div>
-                <div class="cardName">Elec.</div>
+                <div class="numbers">14</div>
+                <div class="cardName">BSc</div>
               </div>
             </a>
 
             <div class="iconBx">
-              <ion-icon name="bulb-outline"></ion-icon>
+              <ion-icon name="clipboard-outline"></ion-icon>
             </div>
           </div>
         </div>
 
-        <!-- ================== Application Details ====================== -->
+        <!-- ================== Application details ====================== -->
 
         <div class="details">
           <div class="recentOrders">
@@ -202,85 +193,57 @@
                   <td>Name</td>
                   <td>Date</td>
                   <td>Stream Assigned</td>
-                  <td>Action</td>
+                  <td>Status</td>
                 </tr>
               </thead>
 
               <tbody>
                 <tr>
-                  <td>01</td>
-                  <td>Ratan TATA</td>
-                  <td></td>
+                  <td><a href="{% url 'Applicant_details' %}">01</a></td>
+                  <td><a href="{% url 'Applicant_details' %}">Asutosh Barik</a></td>
+                  <td>09.04.2023</td>
                   <td>None</td>
-                  <td>
-                    <button class="accept">Accept</button>
-                    <button class="reject">Reject</button>
-                  </td>
+                  <td>Accepted</td>
                 </tr>
 
                 <tr>
-                  <td>01</td>
-                  <td>Ratan TATA</td>
-                  <td></td>
+                  <td><a href="{% url 'Applicant_details' %}">02</a></td>
+                  <td><a href="{% url 'Applicant_details' %}">Pratyush Nayak</a></td>
+                  <td>11.05.2023</td>
                   <td>None</td>
-                  <td>
-                    <button class="accept">Accept</button>
-                    <button class="reject">Reject</button>
-                  </td>
+                  <td>Accepted</td>
                 </tr>
 
                 <tr>
-                  <td>01</td>
-                  <td>Ratan TATA</td>
-                  <td></td>
+                  <td><a href="{% url 'Applicant_details' %}">03</a></td>
+                  <td><a href="{% url 'Applicant_details' %}">Subhalaxmi Bal</a></td>
+                  <td>24.03.2023</td>
                   <td>None</td>
-                  <td>
-                    <button class="accept">Accept</button>
-                    <button class="reject">Reject</button>
-                  </td>
+                  <td>Accepted</td>
                 </tr>
 
                 <tr>
-                  <td>01</td>
-                  <td>Ratan TATA</td>
-                  <td></td>
+                  <td><a href="{% url 'Applicant_details' %}">04</a></td>
+                  <td><a href="{% url 'Applicant_details' %}">Pradip Kumar Sutar</a></td>
+                  <td>11.05.2023</td>
                   <td>None</td>
-                  <td>
-                    <button class="accept">Accept</button>
-                    <button class="reject">Reject</button>
-                  </td>
+                  <td>Rejected</td>
                 </tr>
 
               </tbody>
             </table>
           </div>
 
-          <!-- <div class="slideshow">
-            <div class="slide">
-              <img src="image1.jpg" alt="Slide 1">
-              <div class="caption">Slide 1 Caption</div>
-            </div>
-            <div class="slide">
-              <img src="{% static 'AdminPanel/img/customer02.jpg' %}" alt="Slide 2">
-              <div class="caption">Slide 2 Caption</div>
-            </div>
-            <div class="slide">
-              <img src="image3.jpg" alt="Slide 3">
-              <div class="caption">Slide 3 Caption</div>
-            </div>
-          </div>
-         -->
+<!-- =========== Scripts =========  -->
+<script src="{% static 'AdminPanel/js/main.js' %}"></script>
+<script src="{% static 'AdminPanel/js/jquery.js' %}"></script>
+<script src="{% static 'AdminPanel/js/popper.js' %}"></script>
+<script src="{% static 'AdminPanel/js/bootstrap.js' %}"></script>
 
-          <!-- =========== Scripts =========  -->
-          <script src="{% static 'AdminPanel/js/main.js' %}"></script>
-          <script src="{% static 'AdminPanel/js/jquery.js' %}"></script>
-          <script src="{% static 'AdminPanel/js/popper.js' %}"></script>
-          <script src="{% static 'AdminPanel/js/bootstrap.js' %}"></script>
-
-          <!-- ====== ionicons ======= -->
-          <script type="module"
-            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-          <script nomodule
-            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        </body>
-      </html>
+<!-- ====== ionicons ======= -->
+<script type="module"
+src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+  </html>
