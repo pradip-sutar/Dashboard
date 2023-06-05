@@ -12,3 +12,6 @@ def Seminar_report(request):
 
 def Projects_report(request):
     return render(request,'project_report.html')
+
+def Assignment(request):
+    return render(request,'Assignment.html')
