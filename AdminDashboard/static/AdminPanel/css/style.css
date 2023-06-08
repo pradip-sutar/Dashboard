@@ -520,17 +520,6 @@ tr:hover {
   background-color: #f5f5f5;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .button {
   font-size: 12px;
   padding: 5px 10px;
@@ -543,3 +532,30 @@ tr:hover {
 .button:hover {
   background-color: #ddd;
 }
+
+img{
+  width: 50%;
+  height: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
