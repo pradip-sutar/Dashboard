@@ -15,3 +15,6 @@ def Projects_report(request):
 
 def Assignment(request):
     return render(request,'Assignment.html')
+
+def Docs(request):
+    return render(request,'documents.html')

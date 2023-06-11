@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'AdminPanel/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'Student/css/student.css' %}">
+    <title>Documents</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+
+              <span class="title">STUDENT_ADMIN</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="{% url 'Applicant_details' %}">
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="title">Applicant details</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="{% url 'seminar_report' %}">
+              <span class="icon">
+                <ion-icon name="newspaper-outline"></ion-icon>
+              </span>
+              <span class="title">Seminars</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="{% url 'projects_report' %}">
+              <span class="icon">
+                <ion-icon name="notifications-outline"></ion-icon>
+              </span>
+              <span class="title">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'assignment' %}">
+              <span class="icon">
+                <ion-icon name="laptop-outline"></ion-icon>
+              </span>
+              <span class="title">Assignment</span>
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'docs' %}">
+              <span class="icon">
+                <ion-icon name="document-text-outline"></ion-icon>
+              </span>
+              <span class="title">Documents</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- ================= Main Topbar ================ -->
+      <div class="main">
+        <div class="topbar">
+          <div class="toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+          </div>
+
+          <div class="search">
+            <label>
+              <input type="text" placeholder="Search here">
+              <ion-icon name="search-outline"></ion-icon>
+            </label>
+          </div>
+
+          <div class="user">
+            <img src="assets/imgs/customer01.jpg" alt>
+          </div>
+        </div>
+        <nav class="navbar">
+          <div class="navbar-brand">Document Details</div>
+          <!-- <ul class="navbar-menu">
+      <li class="navbar-item"><a href="#">Home</a></li>
+      <li class="navbar-item"><a href="#">About</a></li>
+      <li class="navbar-item"><a href="#">Services</a></li>
+      <li class="navbar-item"><a href="#">Contact</a></li>
+    </ul> -->
+        </nav>
+
+        <div class="form-container">
+
+        <div class="roww">
+          
+              <div class="columnnn">
+                <form action="">
+
+                <div class="form-group">
+                  <label for="name">Class 10th marks:</label><br>
+                  <input type="number" id="name" name="10" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="name">Class 12th marks:</label><br>
+                  <input type="number" id="name" name="12" required><br>
+                </div>
+
+                <div class="form-group">
+                  <label for="name">PG Degree marks:</label><br>
+                  <input type="number" id="name" name="pg" required><br>
+                </div>
+
+                <div class="form-group">
+                  <label for="name">Year of Experience:</label><br>
+                  <input type="number" id="name" name="exp" required><br>
+                </div>
+
+                <div class="form-group">
+                  <label for="name">Adhaar Number:</label><br>
+                  <input type="number" id="name" name="adhaar" required><br>
+                </div>
+
+                <div class="form-group">
+                  <label for="name">PAN Number:</label><br>
+                  <input type="number" id="name" name="pan" required><br>
+                </div>
+
+                <div class="form-group">
+                  <button type="submit">Submit</button>
+                </div>
+              </div>
+
+              <div class="columnnn">
+                <div class="file-upload">
+                  <h3 style="text-align: center;">Class 10</h3>
+                  <label for="myFile">Choose a file</label>
+                  <input type="file" id="myFile" name="myFile" onchange="showFileName1(this)" required>
+                  <p id="cls1"></p>
+                </div><br>
+
+                <div class="file-upload">
+                  <h3 style="text-align: center;">Class 12</h3>
+                  <label for="myFile">Choose a file</label>
+                  <input type="file" id="myFile" name="myFile" onchange="showFileName2(this)" required>
+                  <p id="cls2"></p>
+                </div><br>
+
+                <div class="file-upload">
+                  <h3 style="text-align: center;">PG Degree</h3>
+                  <label for="myFile">Choose a file</label>
+                  <input type="file" id="myFile" name="myFile" onchange="showFileName3(this)" required>
+                  <p id="pg"></p>
+                </div><br>
+
+                <div class="file-upload">
+                  <h3 style="text-align: center;">Experience</h3>
+                  <label for="myFile">Choose a file</label>
+                  <input type="file" id="myFile" name="myFile" onchange="showFileName4(this)" required>
+                  <p id="exp"></p>
+                </div><br>
+
+                <div class="file-upload">
+                  <h3 style="text-align: center;">Adhaar</h3>
+                  <label for="myFile">Choose a file</label>
+                  <input type="file" id="myFile" name="myFile" onchange="showFileName5(this)" required>
+                  <p id="adhaar"></p>
+                </div><br>
+
+                <div class="file-upload">
+                  <h3 style="text-align: center;">PAN</h3>
+                  <label for="myFile">Choose a file</label>
+                  <input type="file" id="myFile" name="myFile" onchange="showFileName6(this)" required>
+                  <p id="pan"></p>
+                </div><br>
+              </form>
+              </div>
+            </div>
+
+            <!-- =========== Scripts =========  -->
+            <script src="{% static 'AdminPanel/js/main.js' %}"></script>
+            <script src="{% static 'Student/js/main.js' %}"></script>
+            <script src="{% static 'AdminPanel/js/jquery.js' %}"></script>
+            <script src="{% static 'AdminPanel/js/popper.js' %}"></script>
+            <script src="{% static 'AdminPanel/js/bootstrap.js' %}"></script>
+
+            <!-- ====== ionicons ======= -->
+            <script type="module"
+              src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule
+              src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+          </body>
+        </html>

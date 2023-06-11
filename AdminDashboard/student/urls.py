@@ -7,4 +7,5 @@ urlpatterns = [
     path('seminar/',views.Seminar_report,name='seminar_report'),
     path('project/',views.Projects_report,name='projects_report'),
     path('assign/',views.Assignment,name='assignment'),
+    path('docs/',views.Docs,name='docs'),
 ]
