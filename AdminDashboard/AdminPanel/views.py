@@ -10,3 +10,6 @@ def analytics(request):
 def notification(request):
     return render(request,'notification.html')
 
+def create_group(request):
+    return render(request,'creategroup.html')
+

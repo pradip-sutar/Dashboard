@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'AdminPanel/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'AdminPanel/css/email.css' %}">
-     <title>Admin Dashboard</title>
+     <title>Notification</title>
 
   </head>
 
@@ -37,7 +37,7 @@
               <span class="icon">
                 <ion-icon name="newspaper-outline"></ion-icon>
               </span>
-              <span class="title">Application</span>
+              <span class="title">Analytics</span>
             </a>
           </li>
 
@@ -83,56 +83,39 @@
 
   <!-- ================== Email Form ============== -->
 
-      <!DOCTYPE html>
-      <html lang="en">
-      <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-      </head>
-      <body>
         <div class="container1">
 
           <form action="">
             <h3>Email Section</h3>
-            <input type="text" id="subject" placeholder="Subject" required>
+            <input type="text" id="subject" placeholder="Subject" >
             <!-- <input type="email" id="email" placeholder="Email id" required>
             <input type="text" id="phone" placeholder="Phone no." required> -->
             <textarea id="message" rows="4" placeholder="Message"></textarea>
-            <select name="email" id="email" required>
+          
+            
+            <select name="drop" id="drop" >
               <option value="All">All</option>
+              <option value="Individual">Choose Individual</option>
               <option value="CSE">CSE</option>
               <option value="Mech">Mech.</option>
               <option value="Elect">Elect.</option>
             </select>
+            <a href="{% url 'creategroup' %}">
+              <button class="group" type="button">Create Group</button>
+            </a>
+            
             <button type="submit">Send</button>
           </form>
-
         </div>
+        
       </body>
       </html>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- =========== Scripts =========  -->
     <script src="{% static 'AdminPanel/js/main.js' %}"></script>
+    <script src="{% static 'Student/js/main.js' %}"></script>
     <script src="{% static 'AdminPanel/js/jquery.js' %}"></script>
     <script src="{% static 'AdminPanel/js/popper.js' %}"></script>
     <script src="{% static 'AdminPanel/js/bootstrap.js' %}"></script>

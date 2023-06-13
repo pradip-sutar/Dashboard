@@ -13,7 +13,7 @@
 
 .container1{
     width: 110%;
-    height: 100vh;
+    height: 80vh;
     background: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -21,7 +21,7 @@
 }
 
 form{
-    background: #e98dff;
+    background: #ffffff;
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
@@ -30,6 +30,21 @@ form{
     border-radius: 20px;
     margin-top: -15vh;
     margin-left: -13vh;
+}
+
+form select, .group{
+    padding: 10px;
+    background: #f6f6ff;
+    color: #1e00ff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 170px;
+    margin: 20px auto 0;
+    border-radius: 10px;
+    box-shadow: inset 3px 1px 20px 4px #d2d2d2;
+
 }
 form h3{
     color: #555;

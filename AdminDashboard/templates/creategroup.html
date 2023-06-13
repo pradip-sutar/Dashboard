@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'Student/css/grouptable.css' %}">
+        <link rel="stylesheet" href="{% static 'Student/css/student.css' %}">
+        <title>Groups</title>
+    </head>
+    <body>
+        <!-- ========================= Main ==================== -->
+
+        <div class="topbar">
+            <nav class="navbar">
+                <div class="navbar-brand">Group Name : </div>
+            </nav>
+            <div class="search">
+                <label>
+                    <input type="text" placeholder="Search here">
+                    <ion-icon name="search-outline"></ion-icon>
+                </label>
+            </div>
+
+            <div class="user">
+                <img src="assets/imgs/customer01.jpg" alt>
+            </div>
+        </div>
+
+        <div class="details">
+            <div class="recentOrders">
+              <!-- <div class="cardHeader">
+                <h2>Analytics</h2>
+                <a href="#" class="btn">View All</a>
+              </div> -->
+
+
+              <div class="dropdown">
+                <button class="filter-button">Filter</button>
+                <div class="dropdown-content">
+                  <a href="#">CSE</a>
+                  <a href="#">Mech.</a>
+                  <a href="#">Elect.</a>
+                </div>
+              </div>
+              
+              
+              <table>
+                <thead>
+                  <tr>
+                    <td></td>
+                    <td>Id</td>
+                    <td>Name</td>
+                    <td>Regd. No.</td>
+                    <td>Branch</td>
+                  </tr>
+                </thead>
+  
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td><a href="{% url 'Applicant_details' %}">01</a></td>
+                    <td><a href="{% url 'Applicant_details' %}">Asutosh Barik</a></td>
+                    <td>1601294219</td>
+                    <td>CSE</td>
+                  </tr>
+  
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td><a href="{% url 'Applicant_details' %}">02</a></td>
+                    <td><a href="{% url 'Applicant_details' %}">Pratyush Nayak</a></td>
+                    <td>1601294301</td>
+                    <td>Mech.</td>
+                  </tr>
+  
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td><a href="{% url 'Applicant_details' %}">03</a></td>
+                    <td><a href="{% url 'Applicant_details' %}">Subhalaxmi Bal</a></td>
+                    <td>1601294725</td>
+                    <td>Elect.</td>
+                  </tr>
+                </tbody>
+            </table>
+          </div>
+
+          <div class="details">
+            <div class="recentOrders">
+                <form action="">
+                  <textarea id="message" rows="4" placeholder="Added Students name"></textarea>
+                </form>
+            </div>
+        </div>
+
+        <!-- ===================== Scripts ================ -->
+        <script src="{% static 'AdminPanel/js/main.js' %}"></script>
+        <script src="{% static 'AdminPanel/js/jquery.js' %}"></script>
+        <script src="{% static 'AdminPanel/js/popper.js' %}"></script>
+        <script src="{% static 'AdminPanel/js/bootstrap.js' %}"></script>
+
+        <!-- ======================= ionicons ========================= -->
+        <script type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    </body>
+</html>
