@@ -18,3 +18,6 @@ def Assignment(request):
 
 def Docs(request):
     return render(request,'documents.html')
+
+def test(request):
+    return render(request,'test.html')

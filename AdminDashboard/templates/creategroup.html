@@ -1,108 +1,139 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="{% static 'Student/css/grouptable.css' %}">
-        <link rel="stylesheet" href="{% static 'Student/css/student.css' %}">
-        <title>Groups</title>
-    </head>
-    <body>
-        <!-- ========================= Main ==================== -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'Student/css/grouptable.css' %}">
 
-        <div class="topbar">
-            <nav class="navbar">
-                <div class="navbar-brand">Group Name : </div>
-            </nav>
+    <link rel="stylesheet" href="{% static 'Student/css/student.css' %}">
+    <title>Groups</title>
+  </head>
+  <body>
+    <!-- ========================= Main ==================== -->
+
+    <div class="topbar">
+      <nav class="navbar">
+        <div class="navbar-brand">Group Name : </div>
+      </nav>
+
+      <div class="user">
+        <img src="assets/imgs/customer01.jpg" alt>
+      </div>
+    </div>
+
+    <div class="details">
+      <div class="recentOrders">
+        <div class="container-group-top">
+          <div class="item">
             <div class="search">
-                <label>
-                    <input type="text" placeholder="Search here">
-                    <ion-icon name="search-outline"></ion-icon>
-                </label>
+              <label>
+                <input type="text" placeholder="Search here">
+                <ion-icon name="search-outline"></ion-icon>
+              </label>
             </div>
-
-            <div class="user">
-                <img src="assets/imgs/customer01.jpg" alt>
-            </div>
-        </div>
-
-        <div class="details">
-            <div class="recentOrders">
-              <!-- <div class="cardHeader">
-                <h2>Analytics</h2>
-                <a href="#" class="btn">View All</a>
-              </div> -->
-
-
-              <div class="dropdown">
-                <button class="filter-button">Filter</button>
-                <div class="dropdown-content">
-                  <a href="#">CSE</a>
-                  <a href="#">Mech.</a>
-                  <a href="#">Elect.</a>
-                </div>
-              </div>
-              
-              
-              <table>
-                <thead>
-                  <tr>
-                    <td></td>
-                    <td>Id</td>
-                    <td>Name</td>
-                    <td>Regd. No.</td>
-                    <td>Branch</td>
-                  </tr>
-                </thead>
-  
-                <tbody>
-                  <tr>
-                    <td><input type="checkbox"></td>
-                    <td><a href="{% url 'Applicant_details' %}">01</a></td>
-                    <td><a href="{% url 'Applicant_details' %}">Asutosh Barik</a></td>
-                    <td>1601294219</td>
-                    <td>CSE</td>
-                  </tr>
-  
-                  <tr>
-                    <td><input type="checkbox"></td>
-                    <td><a href="{% url 'Applicant_details' %}">02</a></td>
-                    <td><a href="{% url 'Applicant_details' %}">Pratyush Nayak</a></td>
-                    <td>1601294301</td>
-                    <td>Mech.</td>
-                  </tr>
-  
-                  <tr>
-                    <td><input type="checkbox"></td>
-                    <td><a href="{% url 'Applicant_details' %}">03</a></td>
-                    <td><a href="{% url 'Applicant_details' %}">Subhalaxmi Bal</a></td>
-                    <td>1601294725</td>
-                    <td>Elect.</td>
-                  </tr>
-                </tbody>
-            </table>
           </div>
 
-          <div class="details">
-            <div class="recentOrders">
-                <form action="">
-                  <textarea id="message" rows="4" placeholder="Added Students name"></textarea>
-                </form>
+          <div class="dropdown">
+            <button class="filter-button">Branch Wise</button>
+            <div class="dropdown-content">
+              <a href="#">CSE</a>
+              <a href="#">Mech.</a>
+              <a href="#">Elect.</a>
             </div>
+          </div>
+          <div class="dropdown">
+            <button class="filter-button">Year Wise</button>
+            <div class="dropdown-content">
+              <a href="#">CSE</a>
+              <a href="#">Mech.</a>
+              <a href="#">Elect.</a>
+            </div>
+          </div>
+
         </div>
 
-        <!-- ===================== Scripts ================ -->
-        <script src="{% static 'AdminPanel/js/main.js' %}"></script>
-        <script src="{% static 'AdminPanel/js/jquery.js' %}"></script>
-        <script src="{% static 'AdminPanel/js/popper.js' %}"></script>
-        <script src="{% static 'AdminPanel/js/bootstrap.js' %}"></script>
+        <table>
+          <thead>
+            <tr>
+              <td></td>
+              <td>Id</td>
+              <td>Name</td>
+              <td>Regd. No.</td>
+              <td>Branch</td>
+            </tr>
+          </thead>
 
-        <!-- ======================= ionicons ========================= -->
-        <script type="module"
-            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule
-            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" id></td>
+              <td><a href="{% url 'Applicant_details' %}">01</a></td>
+              <td><a href="{% url 'Applicant_details' %}">Asutosh Barik</a></td>
+              <td>1601294219</td>
+              <td>CSE</td>
+            </tr>
+
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><a href="{% url 'Applicant_details' %}">02</a></td>
+              <td><a href="{% url 'Applicant_details' %}">Pratyush Nayak</a></td>
+              <td>1601294301</td>
+              <td>Mech.</td>
+            </tr>
+
+            <tr>
+              <td><input type="checkbox"></td>
+              <td><a href="{% url 'Applicant_details' %}">03</a></td>
+              <td><a href="{% url 'Applicant_details' %}">Subhalaxmi Bal</a></td>
+              <td>1601294725</td>
+              <td>Elect.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- <div class="details-side"> -->
+      <div class="recentOrders">
+        <form action>
+          <textarea id="message" rows="4" placeholder="Added Students name"></textarea>
+          <div class="container-group-top">
+
+            <div class="form-group">
+              <label for="text">Group Name:</label>
+              <input type="text" id="text" name="group" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+          <div class="dropdown">
+            <button class="filter-button">Group Details</button>
+            <div class="dropdown-content">
+              <a href="#">All Groups</a>
+              <a href="#">Group A</a>
+              <a href="#">Group B</a>
+              <a href="#">Group C</a>
+            </div>
+          </div>
+      </div>
+
+      <!-- ===================== Scripts ================ -->
+      <script src="{% static 'AdminPanel/js/main.js' %}"></script>
+      <script src="{% static 'AdminPanel/js/jquery.js' %}"></script>
+      <script src="{% static 'AdminPanel/js/popper.js' %}"></script>
+      <script src="{% static 'AdminPanel/js/bootstrap.js' %}"></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+      <!-- ======================= ionicons ========================= -->
+      <script type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     </body>
-</html>
+  </html>

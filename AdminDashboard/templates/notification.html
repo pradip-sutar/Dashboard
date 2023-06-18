@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'AdminPanel/css/style.css' %}">
     <link rel="stylesheet" href="{% static 'AdminPanel/css/email.css' %}">
-     <title>Notification</title>
+    <title>Notification</title>
 
   </head>
 
@@ -79,21 +79,27 @@
             <img src="assets/imgs/customer01.jpg" alt>
           </div>
         </div>
-  <!-- <img src="{% static 'AdminPanel/img/img1.jpg' %}" style="width: 110%; height: 70%;" alt="background_img" srcset="">   -->
+        <!-- <img src="{% static 'AdminPanel/img/img1.jpg' %}" style="width: 110%; height: 70%;" alt="background_img" srcset="">   -->
 
-  <!-- ================== Email Form ============== -->
+        <!-- ================== Email Form ============== -->
 
         <div class="container1">
 
-          <form action="">
+          <form action>
             <h3>Email Section</h3>
-            <input type="text" id="subject" placeholder="Subject" >
+        
+              <input list="individual" name="individual" placeholder="Recipient">
+              <datalist id="individual">
+                <option value="group A">
+                <option value="group B">
+              </datalist>
+            
+            <input type="text" id="subject" placeholder="Subject">
             <!-- <input type="email" id="email" placeholder="Email id" required>
             <input type="text" id="phone" placeholder="Phone no." required> -->
             <textarea id="message" rows="4" placeholder="Message"></textarea>
-          
-            
-            <select name="drop" id="drop" >
+
+            <select name="drop" id="drop">
               <option value="All">All</option>
               <option value="Individual">Choose Individual</option>
               <option value="CSE">CSE</option>
@@ -103,17 +109,15 @@
             <a href="{% url 'creategroup' %}">
               <button class="group" type="button">Create Group</button>
             </a>
-            
+
             <button type="submit">Send</button>
           </form>
         </div>
-        
+
       </body>
-      </html>
+    </html>
 
-
-
-        <!-- =========== Scripts =========  -->
+    <!-- =========== Scripts =========  -->
     <script src="{% static 'AdminPanel/js/main.js' %}"></script>
     <script src="{% static 'Student/js/main.js' %}"></script>
     <script src="{% static 'AdminPanel/js/jquery.js' %}"></script>
@@ -125,8 +129,7 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
 
   </body>
-  
+
 </html>
