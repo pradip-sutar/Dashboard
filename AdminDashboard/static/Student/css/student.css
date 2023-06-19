@@ -65,7 +65,7 @@ body{
 
 .form-group {
   margin-bottom: 20px;
-  margin-left: 20%;
+  margin-left: 5%;
   margin-top: 12px;
   
 }
@@ -117,7 +117,7 @@ body{
 .form-group textarea {
   width: 50%;
   padding: 8px;
-  border: 2px solid #ccc;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 
@@ -133,8 +133,8 @@ body{
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin-inline: 20px;
-  float: right;
+  /* margin-inline: 20px;
+  float: right; */
 }
 
 .form-group button:hover {
@@ -146,7 +146,7 @@ body{
 .dropdown {
   position: relative;
   display: inline-block;
-  margin-left: 4%;
+  margin-left: 5%;
 }
 .dropdown1 {
   position: relative;
@@ -191,7 +191,7 @@ body{
 /* ===================== Top Bar =============== */
 
 .navbar {
-  background-color: #9f006a;
+  background-color: #ff0073;
   padding: 10px;
   margin-top: 5px;
   border-radius: 17px;
@@ -205,12 +205,12 @@ body{
   margin-top: 5px;
   border-radius: 17px;
   border-color: 2px solid white;
-  margin-left: 23px;
+  /* margin-left: 23px; */
   margin-right: 205px;
   
 }
 
-.navbar-brand {
+.navbar-brand1 {
   color: #fff;
   font-size: 24px;
   font-weight: bold;
