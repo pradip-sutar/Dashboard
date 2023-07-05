@@ -11,6 +11,7 @@
     <title>Notification</title>
 
   </head>
+  
 
   <body>
     <!-- =============== Navigation ================ -->
@@ -98,17 +99,18 @@
             <!-- <input type="email" id="email" placeholder="Email id" required>
             <input type="text" id="phone" placeholder="Phone no." required> -->
             <textarea id="message" rows="4" placeholder="Message"></textarea>
-
-            <select name="drop" id="drop">
-              <option value="All">All</option>
-              <option value="Individual">Choose Individual</option>
-              <option value="CSE">CSE</option>
-              <option value="Mech">Mech.</option>
-              <option value="Elect">Elect.</option>
-            </select>
-            <a href="{% url 'creategroup' %}">
-              <button class="group" type="button">Create Group</button>
-            </a>
+            <div class="align">
+                <select name="drop" id="drop">
+                  <option value="All">All</option>
+                  <option value="Individual">Choose Individual</option>
+                  <option value="CSE">CSE</option>
+                  <option value="Mech">Mech.</option>
+                  <option value="Elect">Elect.</option>
+                </select>
+                <a href="{% url 'creategroup' %}">
+                  <button class="group" type="button">Create Group</button>
+                </a>
+          </div>
 
             <button type="submit">Send</button>
           </form>

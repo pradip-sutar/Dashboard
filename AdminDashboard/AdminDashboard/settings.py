@@ -45,8 +45,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'AdminPanel',
-    'student',
-    'studentprofile',
 ]
 
 MIDDLEWARE = [
