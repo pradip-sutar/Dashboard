@@ -20,4 +20,5 @@ urlpatterns = [
     path('ass/',views.stu_assignment,name='stu_assignment'),
     path('sem/',views.stu_seminar,name='stu_seminar'),
     path('test/',views.test,name='test'),
+    path('login/',views.login,name='login'),
 ]
