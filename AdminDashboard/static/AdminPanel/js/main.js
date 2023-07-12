@@ -20,8 +20,27 @@ toggle.onclick = function () {
   main.classList.toggle("active");
 };
 
+// Accept and Reject Button
 
+function acceptAction(button) {
+  var row = button.parentNode.parentNode;
+  var acceptButton = row.querySelector(".button-accept");
+  var rejectButton = row.querySelector(".button-reject");
 
+  acceptButton.innerHTML = "Accepted";
+  acceptButton.classList.add("accepted");
+  rejectButton.style.display = "none";
+}
+
+function rejectAction(button) {
+  var row = button.parentNode.parentNode;
+  var acceptButton = row.querySelector(".button-accept");
+  var rejectButton = row.querySelector(".button-reject");
+
+  rejectButton.innerHTML = "Rejected";
+  rejectButton.classList.add("rejected");
+  acceptButton.style.display = "none";
+}
 
 
 

@@ -2,6 +2,9 @@ from django.shortcuts import render
 
 # Create your views here.
 def Admin(request):
+    if request.method == 'GET':
+        a = request.GET.get('accept')
+        print(a)
     return render(request,'admindashboard.html')
 
 def analytics(request):
